@@ -22,4 +22,4 @@ with open('models/GridSearch.pickle', 'wb')as f:
 
 BEST_SCORE = best_score
 print(X)
-print('Best cross val score:', BEST_SCORE)
+# print('Best cross val score:', BEST_SCORE)
