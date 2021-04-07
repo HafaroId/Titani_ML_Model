@@ -1,0 +1,45 @@
+{
+    "description":{
+        "X": [
+            "fixed_acidity",
+            "volatile_acidity",
+            "citric_acid",
+            "residual_sugar",
+            "chlorides",
+            "free_sulfur_dioxide",
+            "total_sulfur_dioxide",
+            "density",
+            "pH",
+            "sulphates",
+            "alcohol"
+        ],
+        "final_columns":[
+                    "fixed_acidity",
+                    "volatile_acidity",
+                    "citric_acid",
+                    "residual_sugar",
+                    "chlorides",
+                    "free_sulfur_dioxide",
+                    "total_sulfur_dioxide",
+                    "density",
+                    "pH",
+                    "sulphates",
+                    "alcohol"
+                ],
+        "y":"quality",
+        "metrics":"mean_absolute_percentage_error"
+    },
+    "operations":[
+      {
+            "operation_number":1,
+            "operation_name":"log_transform",
+            "params":{
+                "in_columns":[
+                    [
+                        "pH"
+                    ]
+                ]
+            }
+        }
+    ]
+}
